@@ -1,0 +1,14 @@
+c:\Users\Пользователь\C#_projects\2_task\bin\Debug\net9.0\2_task.exe
+c:\Users\Пользователь\C#_projects\2_task\bin\Debug\net9.0\2_task.deps.json
+c:\Users\Пользователь\C#_projects\2_task\bin\Debug\net9.0\2_task.runtimeconfig.json
+c:\Users\Пользователь\C#_projects\2_task\bin\Debug\net9.0\2_task.dll
+c:\Users\Пользователь\C#_projects\2_task\bin\Debug\net9.0\2_task.pdb
+c:\Users\Пользователь\C#_projects\2_task\obj\Debug\net9.0\2_task.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Пользователь\C#_projects\2_task\obj\Debug\net9.0\2_task.AssemblyInfoInputs.cache
+c:\Users\Пользователь\C#_projects\2_task\obj\Debug\net9.0\2_task.AssemblyInfo.cs
+c:\Users\Пользователь\C#_projects\2_task\obj\Debug\net9.0\2_task.csproj.CoreCompileInputs.cache
+c:\Users\Пользователь\C#_projects\2_task\obj\Debug\net9.0\2_task.dll
+c:\Users\Пользователь\C#_projects\2_task\obj\Debug\net9.0\refint\2_task.dll
+c:\Users\Пользователь\C#_projects\2_task\obj\Debug\net9.0\2_task.pdb
+c:\Users\Пользователь\C#_projects\2_task\obj\Debug\net9.0\2_task.genruntimeconfig.cache
+c:\Users\Пользователь\C#_projects\2_task\obj\Debug\net9.0\ref\2_task.dll
