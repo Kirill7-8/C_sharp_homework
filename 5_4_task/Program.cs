@@ -4,7 +4,7 @@
     {
         Console.WriteLine("Введите n: ");
         int n = int.Parse(Console.ReadLine());
-        func(n, 0);
+        func(n, 1);
     }
     static void str(int n, char s)
     {
@@ -17,19 +17,19 @@
     {
         if (n == 0)
         {
-            str(i * 2 + 2, '*');
+            str(i * 2, '*');
             Console.WriteLine();
         }
         if (n > 0)
         {
-            str(i + 1, '*');
+            str(i, '*');
             str(n, ' ');
-            str(i + 1, '*');
+            str(i, '*');
             Console.WriteLine();
             func(n - 2, i + 1);
-            str(i + 1, '*');
+            str(i, '*');
             str(n, ' ');
-            str(i + 1, '*');
+            str(i, '*');
             Console.WriteLine();
         }
     }
