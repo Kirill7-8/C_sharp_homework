@@ -3,8 +3,7 @@
     static void Main()
     {
         Console.WriteLine("Введите n: ");
-        //int n = int.Parse(Console.ReadLine());
-        int n = 12;
+        int n = int.Parse(Console.ReadLine());
         func(n, 0);
     }
     static void str(int n, char s)
