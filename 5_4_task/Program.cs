@@ -4,7 +4,14 @@
     {
         Console.WriteLine("Введите n: ");
         int n = int.Parse(Console.ReadLine());
-        func(n, 1);
+        if (n < 0 || n % 2 != 0)
+        {
+            Console.WriteLine("Ошибка! Число должно быть четное и положительное!!!");
+        }
+        else
+        {
+            func(n, 1);
+        }
     }
     static void str(int n, char s)
     {
@@ -15,11 +22,12 @@
     }
     static void func(int n, int i)
     {
+        
         if (n == 0)
-        {
-            str(i * 2, '*');
-            Console.WriteLine();
-        }
+            {
+                str(i * 2, '*');
+                Console.WriteLine();
+            }
         if (n > 0)
         {
             str(i, '*');

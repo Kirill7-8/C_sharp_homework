@@ -60,9 +60,10 @@ class Summator
         return true;
     }
 
-    static int summator(int num)
+    static int summator(int n)
     {
         int result_sum = 0;
+        int num = Math.Abs(n);
         while (num != 0)
         {
             int last_digit = num % 10;
