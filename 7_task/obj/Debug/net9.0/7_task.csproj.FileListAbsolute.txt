@@ -1,0 +1,15 @@
+C:\Users\Kirill_WinLap\C#_projects\7_task\bin\Debug\net9.0\7_task.exe
+C:\Users\Kirill_WinLap\C#_projects\7_task\bin\Debug\net9.0\7_task.deps.json
+C:\Users\Kirill_WinLap\C#_projects\7_task\bin\Debug\net9.0\7_task.runtimeconfig.json
+C:\Users\Kirill_WinLap\C#_projects\7_task\bin\Debug\net9.0\7_task.dll
+C:\Users\Kirill_WinLap\C#_projects\7_task\bin\Debug\net9.0\7_task.pdb
+C:\Users\Kirill_WinLap\C#_projects\7_task\obj\Debug\net9.0\7_task.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kirill_WinLap\C#_projects\7_task\obj\Debug\net9.0\7_task.AssemblyInfoInputs.cache
+C:\Users\Kirill_WinLap\C#_projects\7_task\obj\Debug\net9.0\7_task.AssemblyInfo.cs
+C:\Users\Kirill_WinLap\C#_projects\7_task\obj\Debug\net9.0\7_task.csproj.CoreCompileInputs.cache
+C:\Users\Kirill_WinLap\C#_projects\7_task\obj\Debug\net9.0\7_task.sourcelink.json
+C:\Users\Kirill_WinLap\C#_projects\7_task\obj\Debug\net9.0\7_task.dll
+C:\Users\Kirill_WinLap\C#_projects\7_task\obj\Debug\net9.0\refint\7_task.dll
+C:\Users\Kirill_WinLap\C#_projects\7_task\obj\Debug\net9.0\7_task.pdb
+C:\Users\Kirill_WinLap\C#_projects\7_task\obj\Debug\net9.0\7_task.genruntimeconfig.cache
+C:\Users\Kirill_WinLap\C#_projects\7_task\obj\Debug\net9.0\ref\7_task.dll

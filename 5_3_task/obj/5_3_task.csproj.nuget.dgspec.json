@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Пользователь\\C#_projects\\5_3_task\\5_3_task.csproj": {}
+    "C:\\Users\\Kirill_WinLap\\C#_projects\\5_3_task\\5_3_task.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Пользователь\\C#_projects\\5_3_task\\5_3_task.csproj": {
+    "C:\\Users\\Kirill_WinLap\\C#_projects\\5_3_task\\5_3_task.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Пользователь\\C#_projects\\5_3_task\\5_3_task.csproj",
+        "projectUniqueName": "C:\\Users\\Kirill_WinLap\\C#_projects\\5_3_task\\5_3_task.csproj",
         "projectName": "5_3_task",
-        "projectPath": "C:\\Users\\Пользователь\\C#_projects\\5_3_task\\5_3_task.csproj",
-        "packagesPath": "C:\\Users\\Пользователь\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Пользователь\\C#_projects\\5_3_task\\obj\\",
+        "projectPath": "C:\\Users\\Kirill_WinLap\\C#_projects\\5_3_task\\5_3_task.csproj",
+        "packagesPath": "C:\\Users\\Kirill_WinLap\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kirill_WinLap\\C#_projects\\5_3_task\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Пользователь\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Kirill_WinLap\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"

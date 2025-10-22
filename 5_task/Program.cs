@@ -52,10 +52,9 @@ class Summator
     }
     static bool is_prime(int num){
         if (num < 2) return false;
-        for (int i = 2; i * i <= num; i++){
-            if (num % i == 0){
-                return false;
-            }
+        for (int i = 2; i * i <= num; i++)
+        {
+            if (num % i == 0) return false;
         }
         return true;
     }
@@ -67,10 +66,7 @@ class Summator
         while (num != 0)
         {
             int last_digit = num % 10;
-            if (last_digit % 2 != 0)
-            {
-                result_sum += last_digit;
-            }
+            if (last_digit % 2 != 0) result_sum += last_digit;
             num /= 10;
         }
         return result_sum;
