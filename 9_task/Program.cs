@@ -24,17 +24,13 @@ class Program
             else
             {
                 fileOut.WriteLine("Номер первого отличного элемента: {0}", result);
-            }
-            
+            }   
         }
-
-        
-
     }
 
     static int GetDifference(string file1, string file2)
     {
-        char[] separator = {' ',',', '\n', '\t'};
+        char[] separator = {' ',',', '\n', '\t', '\r'};
         int index = 1;
         using (StreamReader fileIn1 = new StreamReader(file1, Encoding.GetEncoding(1251)))
         {
@@ -42,24 +38,15 @@ class Program
             {
                 string[] file1array = fileIn1.ReadToEnd().Split(separator, StringSplitOptions.RemoveEmptyEntries);
                 string[] file2array = fileIn2.ReadToEnd().Split(separator, StringSplitOptions.RemoveEmptyEntries);
-                foreach (string s in file1array)
-                {
-                    Console.WriteLine(s);
-                }
-                Console.WriteLine("------");
-                foreach (string s in file2array)
-                {
-                    Console.WriteLine(s);
-                }
+                int file1Length = file1array.Length;
+                int file2Length = file2array.Length;
                 
-                int min_length = Math.Min(file1array.Length, file2array.Length);
-                for(int i = 0; i < min_length; i++)
+                for (int i = 0; i < Math.Min(file1Length, file2Length); i++)
                 {
-    
-                    if (!file1array[index].Equals(file2array[index])) return index;
+                    if (!file1array[i].Equals(file2array[i])) return index;
                     index++;
-
                 }
+                if (file1Length != file2Length) return index;
             }
         }
 
