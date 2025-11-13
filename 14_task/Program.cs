@@ -1,6 +1,5 @@
-﻿using System.Drawing;
-using System.IO.Pipelines;
-using System.Text;
+﻿using System;
+using System.IO;
 
 class Program
 {
@@ -21,6 +20,7 @@ class Program
             Console.WriteLine("({0}, {1}, {2})", x, y, z);
         }
     }
+    
     static bool isInSphere(SPoint center_point, int Radius, SPoint point)
     {
         double Ox = Math.Pow(center_point.x - point.x, 2);
@@ -28,9 +28,9 @@ class Program
         double Oz = Math.Pow(center_point.z - point.z, 2); 
         return Math.Sqrt(Ox + Oy + Oz) <= Radius;
     }
-    static SPoint[] Input()
+    
+    static SPoint[] Input(string FileName)
     {
-        string FileName = "C:/Users/Kirill_WinLap/C#_projects/14_task/test.txt";
         using (StreamReader fileIn = new StreamReader(FileName))
         {
             int n = int.Parse(fileIn.ReadLine());
@@ -43,29 +43,53 @@ class Program
             return arr;
         }
     }
+    
     static void findMin(SPoint[] points, int Radius)
     {
-
         int n = points.Length;
-        SPoint min_point = new SPoint(999, 999, 999);
-        int min_points = 999;
+        int[] pointCounts = new int[n];
+
         for (int i = 0; i < n; i++)
         {
             int current_points = 0;
             foreach (SPoint point2 in points)
             {
-                if (isInSphere(points[i], Radius, point2)) current_points++;
+                if (isInSphere(points[i], Radius, point2)) 
+                    current_points++;
             }
-            current_points--;
-
-            if (current_points < min_points) min_point = points[i];
+            pointCounts[i] = current_points;
         }
-        min_point.Show();
+        
+
+        int min_point = pointCounts[0];
+        for (int i = 1; i < n; i++)
+        {
+            if (pointCounts[i] < min_point)
+            {
+                min_point = pointCounts[i];
+            }
+        }
+        
+
+        Console.WriteLine("Минимальные точки (количество точек в сфере = {0}):", min_point);
+        for (int i = 0; i < n; i++)
+        {
+            if (pointCounts[i] == min_point)
+            {
+                Console.Write("Точка: ");
+                points[i].Show();
+                Console.WriteLine("Количество точек в сфере радиуса {0}: {1}", Radius, min_point);
+                Console.WriteLine();
+            }
+        }
     }
+    
     static void Main()
     {
+        string FileName = "C:/Users/Kirill_WinLap/C#_projects/14_task/test.txt";
+        Console.Write("Введите радиус: ");
         int Radius = int.Parse(Console.ReadLine());
-        SPoint[] p = Input();
-        findMin(p, Radius);
+        SPoint[] InPoints = Input(FileName);
+        findMin(InPoints, Radius);
     }
 }

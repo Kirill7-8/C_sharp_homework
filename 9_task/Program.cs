@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.IO;
 using System.Text;
 
@@ -49,7 +49,6 @@ class Program
                 if (file1Length != file2Length) return index;
             }
         }
-
         return -1;
     }
 }
