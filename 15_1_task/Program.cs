@@ -21,7 +21,7 @@ class Program
         int[] numbers_array = Input(file_name);
         var numbers =
             from num in numbers_array
-            where  num <= -100 && num >= -999
+            where  !(num <= -100 && num >= -999)
             select Math.Abs(num);
         
     

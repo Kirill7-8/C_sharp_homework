@@ -19,7 +19,7 @@ class Program
     {
         string file_name = "C:/Users/Kirill_WinLap/C#_projects/16_1_task/Input.txt";
         int[] numbers_array = Input(file_name);
-        var result = numbers_array.Where(num => num <= -100 && num >= -999).Select(Math.Abs);
+        var result = numbers_array.Where(num => num <= -100 && num >= -999).Select(Math.Abs).OrderBy(num => num);
         
     
     foreach (var item in result)

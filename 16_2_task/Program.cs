@@ -1,30 +1,22 @@
-﻿//на основе данных входного файла составить инвентарную ведомость
-//склада, включив следующие данные: вид продукции, стоимость, сорт, количество. Вывести в
-//новый файл информацию о той продукции, количество которой более заданной величины,
-//сгруппировав их по виду продукции.
+﻿//На основе данных входного файла составить инвентарную ведомость
+//игрушек, включив следующие данные: название игрушки, ее стоимость (в руб.), возрастные
+//границы детей, для которых предназначена игрушка. Вывести в новый файл информацию о
+//тех игрушках, которые предназначены для детей старше N лет, отсортировав их по стоимости.
 class Program
 {
     public struct Product
     {
         public string Name {get; set;}
         public double Price {get; set;}
-        public int Variety {get; set;}
-        public int Count {get; set;}
-        public Product(string Name, double Price, int Variety, int Count)
-        {
-            this.Name = Name;
-            this.Price = Price;
-            this.Variety = Variety;
-            this.Count = Count;
-        }
+        public int MinAge {get; set;}
+        
         public Product(string[] array)
         {
-            if (array.Length < 4)
+            if (array.Length < 3)
                 throw new ArgumentException("Массив должен содержать 4 элемента");
             Name = array[0];
             Price = double.Parse(array[1]);
-            Variety = int.Parse(array[2]);
-            Count = int.Parse(array[3]);
+            MinAge = int.Parse(array[2]);
         }
     }
     public static List<Product> Input(string file_name)
@@ -47,20 +39,17 @@ class Program
         string inputFileName = "C:/Users/Kirill_WinLap/C#_projects/16_2_task/Input.txt";
         string outputFileName = "C:/Users/Kirill_WinLap/C#_projects/16_2_task/Output.txt";
 
-        Console.WriteLine("Введите минимальное количество товара: ");
+        Console.WriteLine("Игрушки для детей старше: ");
         int count = int.Parse(Console.ReadLine());
         
         List<Product> products = Input(inputFileName);
-        var query = products.Where(n => n.Count > count).GroupBy(n => n.Name);
+        var query = products.Where(n => n.MinAge > count).OrderByDescending(n => n.Price);
 
-        using(StreamWriter fileOut = new StreamWriter(outputFileName))
-            foreach(var items in query)
+        using(StreamWriter fileOut = new StreamWriter(outputFileName)){
+            foreach(var item in query)
             {
-                fileOut.WriteLine("{0}:", items.Key);
-                foreach(var item in items)
-                {
-                    fileOut.WriteLine("    Цена: {0}; Сорт: {1}; Количество: {2}", item.Price, item.Variety, item.Count);
-                }
+               fileOut.WriteLine("Название: {0} Цена: {1}; Детям от: {2}", item.Name, item.Price, item.MinAge);
             }
+        }
     }
 }
