@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MusicCatalog.Application",
+    "\\MusicCatalog.Domain",
+    "\\MusicCatalog.Infrastructure",
+    "\\MusicCatalog.Presentation",
+    "\\MusicCatalog.Tests.Application",
+    "\\MusicCatalog.Tests.Domain"
+  ],
+  "SelectedNode": "\\MusicCatalog.Presentation\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

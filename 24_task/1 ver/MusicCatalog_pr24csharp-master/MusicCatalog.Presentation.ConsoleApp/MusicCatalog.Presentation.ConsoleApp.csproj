@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MusicCatalog.Application\MusicCatalog.Application.csproj" />
+    <ProjectReference Include="..\MusicCatalog.Domain\MusicCatalog.Domain.csproj" />
+    <ProjectReference Include="..\MusicCatalog.Infrastructure\MusicCatalog.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

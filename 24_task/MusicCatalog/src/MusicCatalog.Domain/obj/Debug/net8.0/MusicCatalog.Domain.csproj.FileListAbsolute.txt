@@ -1,0 +1,12 @@
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Domain\bin\Debug\net8.0\MusicCatalog.Domain.deps.json
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Domain\bin\Debug\net8.0\MusicCatalog.Domain.dll
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Domain\bin\Debug\net8.0\MusicCatalog.Domain.pdb
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Domain\obj\Debug\net8.0\MusicCatalog.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Domain\obj\Debug\net8.0\MusicCatalog.Domain.AssemblyInfoInputs.cache
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Domain\obj\Debug\net8.0\MusicCatalog.Domain.AssemblyInfo.cs
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Domain\obj\Debug\net8.0\MusicCatalog.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Domain\obj\Debug\net8.0\MusicCatalog.Domain.sourcelink.json
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Domain\obj\Debug\net8.0\MusicCatalog.Domain.dll
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Domain\obj\Debug\net8.0\refint\MusicCatalog.Domain.dll
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Domain\obj\Debug\net8.0\MusicCatalog.Domain.pdb
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Domain\obj\Debug\net8.0\ref\MusicCatalog.Domain.dll

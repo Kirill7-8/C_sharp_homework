@@ -1,0 +1,26 @@
+{
+  "$type": "MyProgram.Function[], 18-19_task",
+  "$values": [
+    {
+      "$type": "MyProgram.Line, 18-19_task",
+      "a": 3.0,
+      "b": 4.0
+    },
+    {
+      "$type": "MyProgram.Kub, 18-19_task",
+      "a": 1.0,
+      "b": -2.0,
+      "c": 1.0
+    },
+    {
+      "$type": "MyProgram.Hyperbola, 18-19_task",
+      "a": 5.0,
+      "b": 2.0
+    },
+    {
+      "$type": "MyProgram.Line, 18-19_task",
+      "a": -1.0,
+      "b": 7.0
+    }
+  ]
+}

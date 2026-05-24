@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "MusicCatalog.Infrastructure/1.0.0": {
+        "dependencies": {
+          "MusicCatalog.Application": "1.0.0",
+          "MusicCatalog.Domain": "1.0.0"
+        },
+        "runtime": {
+          "MusicCatalog.Infrastructure.dll": {}
+        }
+      },
+      "MusicCatalog.Application/1.0.0": {
+        "dependencies": {
+          "MusicCatalog.Domain": "1.0.0"
+        },
+        "runtime": {
+          "MusicCatalog.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "MusicCatalog.Domain/1.0.0": {
+        "runtime": {
+          "MusicCatalog.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MusicCatalog.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MusicCatalog.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MusicCatalog.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

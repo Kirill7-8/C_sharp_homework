@@ -1,0 +1,15 @@
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\22_task\1_task\bin\Debug\net10.0\1_task.exe
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\22_task\1_task\bin\Debug\net10.0\1_task.deps.json
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\22_task\1_task\bin\Debug\net10.0\1_task.runtimeconfig.json
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\22_task\1_task\bin\Debug\net10.0\1_task.dll
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\22_task\1_task\bin\Debug\net10.0\1_task.pdb
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\22_task\1_task\obj\Debug\net10.0\1_task.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\22_task\1_task\obj\Debug\net10.0\1_task.AssemblyInfoInputs.cache
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\22_task\1_task\obj\Debug\net10.0\1_task.AssemblyInfo.cs
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\22_task\1_task\obj\Debug\net10.0\1_task.csproj.CoreCompileInputs.cache
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\22_task\1_task\obj\Debug\net10.0\1_task.sourcelink.json
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\22_task\1_task\obj\Debug\net10.0\1_task.dll
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\22_task\1_task\obj\Debug\net10.0\refint\1_task.dll
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\22_task\1_task\obj\Debug\net10.0\1_task.pdb
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\22_task\1_task\obj\Debug\net10.0\1_task.genruntimeconfig.cache
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\22_task\1_task\obj\Debug\net10.0\ref\1_task.dll

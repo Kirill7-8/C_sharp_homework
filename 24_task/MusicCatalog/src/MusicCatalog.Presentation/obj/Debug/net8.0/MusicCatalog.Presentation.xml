@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MusicCatalog.Presentation</name>
+    </assembly>
+    <members>
+        <member name="M:MusicCatalog.Presentation.Controllers.DiscsController.GetAll">
+            <summary>Получить весь каталог дисков</summary>
+        </member>
+        <member name="M:MusicCatalog.Presentation.Controllers.DiscsController.GetById(System.Guid)">
+            <summary>Получить диск по Id</summary>
+        </member>
+        <member name="M:MusicCatalog.Presentation.Controllers.DiscsController.Create(MusicCatalog.Presentation.Contracts.CreateDiscRequest)">
+            <summary>Добавить диск в каталог</summary>
+        </member>
+        <member name="M:MusicCatalog.Presentation.Controllers.DiscsController.Delete(System.Guid)">
+            <summary>Удалить диск и все его песни</summary>
+        </member>
+        <member name="M:MusicCatalog.Presentation.Controllers.SongsController.GetAll">
+            <summary>Получить все песни каталога</summary>
+        </member>
+        <member name="M:MusicCatalog.Presentation.Controllers.SongsController.GetByDisc(System.Guid)">
+            <summary>Получить все песни конкретного диска</summary>
+        </member>
+        <member name="M:MusicCatalog.Presentation.Controllers.SongsController.SearchByArtist(System.String)">
+            <summary>Поиск песен по исполнителю во всём каталоге</summary>
+        </member>
+        <member name="M:MusicCatalog.Presentation.Controllers.SongsController.SortedByTitle(System.Guid)">
+            <summary>Песни диска, отсортированные по названию</summary>
+        </member>
+        <member name="M:MusicCatalog.Presentation.Controllers.SongsController.SortedByArtist(System.Guid)">
+            <summary>Песни диска, отсортированные по исполнителю</summary>
+        </member>
+        <member name="M:MusicCatalog.Presentation.Controllers.SongsController.Add(MusicCatalog.Presentation.Contracts.AddSongRequest)">
+            <summary>Добавить песню на диск</summary>
+        </member>
+        <member name="M:MusicCatalog.Presentation.Controllers.SongsController.Delete(System.Guid)">
+            <summary>Удалить песню</summary>
+        </member>
+    </members>
+</doc>

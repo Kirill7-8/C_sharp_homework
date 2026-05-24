@@ -1,0 +1,16 @@
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Application\bin\Debug\net8.0\MusicCatalog.Application.deps.json
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Application\bin\Debug\net8.0\MusicCatalog.Application.dll
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Application\bin\Debug\net8.0\MusicCatalog.Application.pdb
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Application\bin\Debug\net8.0\MusicCatalog.Domain.dll
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Application\bin\Debug\net8.0\MusicCatalog.Domain.pdb
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Application\obj\Debug\net8.0\MusicCatalog.Application.csproj.AssemblyReference.cache
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Application\obj\Debug\net8.0\MusicCatalog.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Application\obj\Debug\net8.0\MusicCatalog.Application.AssemblyInfoInputs.cache
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Application\obj\Debug\net8.0\MusicCatalog.Application.AssemblyInfo.cs
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Application\obj\Debug\net8.0\MusicCatalog.Application.csproj.CoreCompileInputs.cache
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Application\obj\Debug\net8.0\MusicCatalog.Application.sourcelink.json
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Application\obj\Debug\net8.0\MusicCat.7DB8F3C6.Up2Date
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Application\obj\Debug\net8.0\MusicCatalog.Application.dll
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Application\obj\Debug\net8.0\refint\MusicCatalog.Application.dll
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Application\obj\Debug\net8.0\MusicCatalog.Application.pdb
+C:\Users\Kirill_WinLap\2_course\Programming\C#_projects\24_task\MusicCatalog\src\MusicCatalog.Application\obj\Debug\net8.0\ref\MusicCatalog.Application.dll

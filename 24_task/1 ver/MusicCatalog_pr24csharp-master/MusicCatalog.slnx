@@ -1,0 +1,16 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/src/">
+    <Project Path="MusicCatalog.Application/MusicCatalog.Application.csproj" />
+    <Project Path="MusicCatalog.Domain/MusicCatalog.Domain.csproj" />
+    <Project Path="MusicCatalog.Infrastructure/MusicCatalog.Infrastructure.csproj" />
+    <Project Path="MusicCatalog.Presentation.ConsoleApp/MusicCatalog.Presentation.ConsoleApp.csproj" />
+    <Project Path="MusicCatalog.Presentation/MusicCatalog.Presentation.csproj" />
+  </Folder>
+  <Project Path="MusicCatalog.Tests/MusicCatalog.Tests.csproj" Id="9bc5133f-29e6-4a15-ad17-cfea14ab0d9d" />
+  <Project Path="MusicCatalog/MusicCatalog.vcxproj" Id="cca004b2-d5ce-4cf3-8af1-43bb77973019" />
+</Solution>
