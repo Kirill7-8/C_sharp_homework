@@ -59,34 +59,7 @@ public class AVLTree
 
 
    
-    public void FixBalanceByCount()
-{
-    Root = FixNode(Root);
-}
-
-private AVLNode FixNode(AVLNode node)
-{
-    if (node == null) return null;
-
-    node.Left = FixNode(node.Left);
-    node.Right = FixNode(node.Right);
-
-    UpdateNode(node);
-
-    while (Math.Abs(GetCount(node.Left) - GetCount(node.Right)) > 1)
-    {
-        Console.WriteLine(node.Value);
-        if (GetCount(node.Left) > GetCount(node.Right))
-            node.Left = RemoveDeepestLeaf(node.Left);
-        else
-            node.Right = RemoveDeepestLeaf(node.Right);
-
-        UpdateNode(node);
-        node = Balance(node);
-    }
-
-    return node;
-}
+   
 private void UpdateNode(AVLNode node)
 {
     if (node == null) return;
@@ -115,22 +88,100 @@ private AVLNode RemoveDeepestLeaf(AVLNode node)
 }
 
     
-    public void Task()
+
+public void Delete(int value)
 {
-    FixBalanceByCount();
-    PrintPostorder(Root);
+    Root = Delete(Root, value);
 }
 
-private void PrintPostorder(AVLNode node)
+private AVLNode Delete(AVLNode node, int value)
 {
-    if (node == null) return;
-    PrintPostorder(node.Left);
-    PrintPostorder(node.Right);
-    int balance = Math.Abs(GetCount(node.Left) - GetCount(node.Right));
-    if (balance > 1)
-        Console.WriteLine($"  Узел {node.Value} всё ещё имеет дисбаланс Count = {balance}");
+    if (node == null) return null;
+
+    if (value < node.Value)
+        node.Left = Delete(node.Left, value);
+    else if (value > node.Value)
+        node.Right = Delete(node.Right, value);
     else
-        Console.WriteLine($"  Узел {node.Value} в порядке (CountBalance = {balance})");
+    {
+        // узел найден
+        if (node.Left == null) return node.Right;
+        if (node.Right == null) return node.Left;
+
+        // два потомка – заменяем на минимальный из правого поддерева
+        AVLNode minNode = FindMin(node.Right);
+        node.Value = minNode.Value;
+        node.Right = Delete(node.Right, minNode.Value);
+    }
+
+    UpdateNode(node);
+    return Balance(node);
+}
+
+private AVLNode FindMin(AVLNode node)
+{
+    while (node.Left != null) node = node.Left;
+    return node;
+}
+public bool IsPerfectlyBalanced()
+{
+    return IsPerfectlyBalanced(Root);
+}
+
+private bool IsPerfectlyBalanced(AVLNode node)
+{
+    if (node == null) return true;
+    int diff = Math.Abs(GetCount(node.Left) - GetCount(node.Right));
+    if (diff > 1) return false;
+    return IsPerfectlyBalanced(node.Left) && IsPerfectlyBalanced(node.Right);
+}
+public AVLNode FindDeepestInHeavySubtree()
+{
+    return FindDeepestInHeavySubtree(Root);
+}
+
+private AVLNode FindDeepestInHeavySubtree(AVLNode node)
+{
+    if (node == null) return null;
+    while (node.Left != null || node.Right != null)
+    {
+        int leftCount = GetCount(node.Left);
+        int rightCount = GetCount(node.Right);
+
+        if (leftCount > rightCount)
+            node = node.Left;
+        else 
+            node = node.Right;
+        
+    }
+    return node;
+}
+public List<int> RemoveUpToN(int n)
+{
+    var removed = new List<int>();
+    int attempts = 0;
+
+    while (attempts < n && !IsPerfectlyBalanced())
+    {
+        AVLNode deepest = FindDeepestInHeavySubtree();
+        if (deepest == null) break; // на всякий случай
+
+        int value = deepest.Value;
+        Delete(value);
+        removed.Add(value);
+        attempts++;
+    }
+
+    if (!IsPerfectlyBalanced())
+    {
+        Console.WriteLine($"Не удалось достичь идеального баланса за {n} удалений");
+    }
+    else
+    {
+        Console.WriteLine($"Достигнут идеальный баланс за {removed.Count} удалений");
+    }
+
+    return removed;
 }
 
 private AVLNode Balance(AVLNode node)

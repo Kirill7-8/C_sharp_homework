@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KirillPC\\2_course\\Programming\\C#_projects\\21_task\\21_3_Prep_Self1\\21_3_task.csproj",
+      "projectUniqueName": "C:\\Users\\KirillPC\\2_course\\Programming\\C#_projects\\21_task\\21_3_Prep_Self3\\21_3_task.csproj",
       "projectName": "21_3_task",
-      "projectPath": "C:\\Users\\KirillPC\\2_course\\Programming\\C#_projects\\21_task\\21_3_Prep_Self1\\21_3_task.csproj",
+      "projectPath": "C:\\Users\\KirillPC\\2_course\\Programming\\C#_projects\\21_task\\21_3_Prep_Self3\\21_3_task.csproj",
       "packagesPath": "C:\\Users\\KirillPC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KirillPC\\2_course\\Programming\\C#_projects\\21_task\\21_3_Prep_Self1\\obj\\",
+      "outputPath": "C:\\Users\\KirillPC\\2_course\\Programming\\C#_projects\\21_task\\21_3_Prep_Self3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KirillPC\\AppData\\Roaming\\NuGet\\NuGet.Config"

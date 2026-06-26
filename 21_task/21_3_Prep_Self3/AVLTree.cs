@@ -5,6 +5,7 @@ namespace Example;
 public class AVLTree
 {
     public AVLNode Root;
+    List<int> deletedValues = new List<int>();
 
     public void Insert(int value)
     {
@@ -50,26 +51,26 @@ public class AVLTree
         return node;
     }
     
-    public void FixBalanceByCount(List<int> deletedValues)
+    public void FixBalanceByCount()
     {
-        Root = FixNode(Root, deletedValues);
+        Root = FixNode(Root);
     }
 
-    private AVLNode FixNode(AVLNode node, List<int> deletedValues)
+    private AVLNode FixNode(AVLNode node)
     {
         if (node == null) return null;
 
-        node.Left = FixNode(node.Left, deletedValues);
-        node.Right = FixNode(node.Right, deletedValues);
+        node.Left = FixNode(node.Left);
+        node.Right = FixNode(node.Right);
 
         UpdateNode(node);
 
         while (Math.Abs(GetCount(node.Left) - GetCount(node.Right)) > 1)
         {
             if (GetCount(node.Left) > GetCount(node.Right))
-                node.Left = RemoveDeepestLeaf(node.Left, deletedValues);
+                node.Left = RemoveDeepestLeaf(node.Left);
             else
-                node.Right = RemoveDeepestLeaf(node.Right, deletedValues);
+                node.Right = RemoveDeepestLeaf(node.Right);
 
             UpdateNode(node);
             node = Balance(node);
@@ -83,7 +84,7 @@ public class AVLTree
         node.Height = 1 + Math.Max(GetHeight(node.Left), GetHeight(node.Right));
         node.Count = 1 + GetCount(node.Left) + GetCount(node.Right);
     }
-    private AVLNode RemoveDeepestLeaf(AVLNode node, List<int> deletedValues)
+    private AVLNode RemoveDeepestLeaf(AVLNode node)
     {
         if (node.Left == null && node.Right == null)
         {
@@ -94,11 +95,11 @@ public class AVLTree
 
         if (GetCount(node.Right) >= GetCount(node.Left))
         {
-            node.Right = RemoveDeepestLeaf(node.Right, deletedValues);
+            node.Right = RemoveDeepestLeaf(node.Right);
         }
         else
         {
-            node.Left = RemoveDeepestLeaf(node.Left, deletedValues);
+            node.Left = RemoveDeepestLeaf(node.Left);
         }
         UpdateNode(node);
         return Balance(node);
@@ -107,8 +108,7 @@ public class AVLTree
     
     public List<int> Task()
     {
-        var deletedValues = new List<int>();
-        FixBalanceByCount(deletedValues);
+        FixBalanceByCount();
         return deletedValues;
     }
 

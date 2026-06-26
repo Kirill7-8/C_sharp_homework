@@ -1,112 +1,9 @@
-namespace Example;
+namespace Ex21_13;
+
 public class AVLTree
 {
     public AVLNode Root;
 
-    /// <summary>
-/// Преобразует дерево в идеально сбалансированное (по количеству узлов)
-/// и возвращает количество удалённых узлов.
-/// </summary>
-public int MakePerfectlyBalanced()
-{
-    int totalBefore = Root?.Count ?? 0;
-    Root = MakePerfectlyBalanced(Root);
-    int totalAfter = Root?.Count ?? 0;
-    return totalBefore - totalAfter;
-}
-
-private AVLNode MakePerfectlyBalanced(AVLNode node)
-{
-    if (node == null) return null;
-    
-    // Рекурсивно балансируем детей
-    node.Left = MakePerfectlyBalanced(node.Left);
-    node.Right = MakePerfectlyBalanced(node.Right);
-    
-    // Получаем максимальные размеры для детей (уже после их балансировки)
-    int leftMax = node.Left?.Count ?? 0;
-    int rightMax = node.Right?.Count ?? 0;
-    
-    int newLeftCount, newRightCount;
-    
-    if (Math.Abs(leftMax - rightMax) <= 1)
-    {
-        // Уже хорошо, ничего не отрезаем
-        newLeftCount = leftMax;
-        newRightCount = rightMax;
-    }
-    else if (leftMax > rightMax)
-    {
-        // Левое слишком велико – оставляем в нём только rightMax + 1 узлов
-        newLeftCount = rightMax + 1;
-        newRightCount = rightMax;
-        node.Left = TrimSubtree(node.Left, newLeftCount);
-    }
-    else
-    {
-        // Правое слишком велико
-        newRightCount = leftMax + 1;
-        newLeftCount = leftMax;
-        node.Right = TrimSubtree(node.Right, newRightCount);
-    }
-    
-    // Обновляем поля узла (важно для корректной работы Count выше)
-    node.Count = 1 + newLeftCount + newRightCount;
-    node.Height = 1 + Math.Max(GetHeight(node.Left), GetHeight(node.Right));
-    
-    return node;
-}
-
-/// <summary>
-/// Обрезает поддерево так, чтобы в нём осталось ровно need узлов
-/// (включая корень). Возвращает новый корень обрезанного поддерева.
-/// </summary>
-private AVLNode TrimSubtree(AVLNode node, int need)
-{
-    if (node == null || need <= 0) return null;
-    if (need == 1)
-    {
-        // Оставляем только корень, отрезая всех детей
-        node.Left = null;
-        node.Right = null;
-        node.Count = 1;
-        node.Height = 1;
-        return node;
-    }
-    
-    int leftMax = node.Left?.Count ?? 0;
-    int rightMax = node.Right?.Count ?? 0;
-    int childrenNeed = need - 1;
-    
-    // Распределяем childrenNeed между левым и правым поддеревьями с разницей не более 1
-    int leftNeed = childrenNeed / 2;
-    int rightNeed = childrenNeed - leftNeed;
-    
-    // Корректируем, если доступных узлов не хватает
-    if (leftNeed > leftMax)
-    {
-        rightNeed += leftNeed - leftMax;
-        leftNeed = leftMax;
-    }
-    if (rightNeed > rightMax)
-    {
-        leftNeed += rightNeed - rightMax;
-        rightNeed = rightMax;
-    }
-    // Повторная балансировка (разница не более 1)
-    if (Math.Abs(leftNeed - rightNeed) > 1)
-    {
-        if (leftNeed > rightNeed + 1) leftNeed = rightNeed + 1;
-        else if (rightNeed > leftNeed + 1) rightNeed = leftNeed + 1;
-    }
-    
-    node.Left = TrimSubtree(node.Left, leftNeed);
-    node.Right = TrimSubtree(node.Right, rightNeed);
-    
-    node.Count = 1 + (node.Left?.Count ?? 0) + (node.Right?.Count ?? 0);
-    node.Height = 1 + Math.Max(GetHeight(node.Left), GetHeight(node.Right));
-    return node;
-}
     public void Insert(int value)
     {
         Root = Insert(Root, value);
@@ -143,7 +40,6 @@ private AVLNode TrimSubtree(AVLNode node, int need)
         }
         return node;
     }
-
 
     private int GetHeight(AVLNode node)
     {
