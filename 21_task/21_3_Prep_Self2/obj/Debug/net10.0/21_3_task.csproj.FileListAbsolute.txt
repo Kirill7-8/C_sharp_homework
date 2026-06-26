@@ -1,0 +1,15 @@
+C:\Users\KirillPC\2_course\Programming\C#_projects\21_task\21_3_Prep_Self2\bin\Debug\net10.0\21_3_task.exe
+C:\Users\KirillPC\2_course\Programming\C#_projects\21_task\21_3_Prep_Self2\bin\Debug\net10.0\21_3_task.deps.json
+C:\Users\KirillPC\2_course\Programming\C#_projects\21_task\21_3_Prep_Self2\bin\Debug\net10.0\21_3_task.runtimeconfig.json
+C:\Users\KirillPC\2_course\Programming\C#_projects\21_task\21_3_Prep_Self2\bin\Debug\net10.0\21_3_task.dll
+C:\Users\KirillPC\2_course\Programming\C#_projects\21_task\21_3_Prep_Self2\bin\Debug\net10.0\21_3_task.pdb
+C:\Users\KirillPC\2_course\Programming\C#_projects\21_task\21_3_Prep_Self2\obj\Debug\net10.0\21_3_task.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KirillPC\2_course\Programming\C#_projects\21_task\21_3_Prep_Self2\obj\Debug\net10.0\21_3_task.AssemblyInfoInputs.cache
+C:\Users\KirillPC\2_course\Programming\C#_projects\21_task\21_3_Prep_Self2\obj\Debug\net10.0\21_3_task.AssemblyInfo.cs
+C:\Users\KirillPC\2_course\Programming\C#_projects\21_task\21_3_Prep_Self2\obj\Debug\net10.0\21_3_task.csproj.CoreCompileInputs.cache
+C:\Users\KirillPC\2_course\Programming\C#_projects\21_task\21_3_Prep_Self2\obj\Debug\net10.0\21_3_task.sourcelink.json
+C:\Users\KirillPC\2_course\Programming\C#_projects\21_task\21_3_Prep_Self2\obj\Debug\net10.0\21_3_task.dll
+C:\Users\KirillPC\2_course\Programming\C#_projects\21_task\21_3_Prep_Self2\obj\Debug\net10.0\refint\21_3_task.dll
+C:\Users\KirillPC\2_course\Programming\C#_projects\21_task\21_3_Prep_Self2\obj\Debug\net10.0\21_3_task.pdb
+C:\Users\KirillPC\2_course\Programming\C#_projects\21_task\21_3_Prep_Self2\obj\Debug\net10.0\21_3_task.genruntimeconfig.cache
+C:\Users\KirillPC\2_course\Programming\C#_projects\21_task\21_3_Prep_Self2\obj\Debug\net10.0\ref\21_3_task.dll
